@@ -89,3 +89,20 @@ while number < 10 or number > 20:
 print('Thank you!')
 
 #051
+# задаем число бутылок
+number = 12
+
+# пока число бутылок > 0, выводим пользователю их количество
+while number > 0:
+    print('There are', number, 'green bottles hanging on the wall.\n',
+          number, 'green bottles hanging on the wall.\n'
+                  'And if 1 green bottle should accidentally fall.')
+    #  отнимаем 1 бутылку
+    number -= 1
+    answer = int(input('How many green bottles will be hanging on the wall?'))
+    if answer == number:
+        print('There are will be', number, 'green bottles hanging on the wall.')
+    else:
+        while answer != number:
+            answer = int(input('No, try again: '))
+print('There are no more green bottles hanging on the wall.')
